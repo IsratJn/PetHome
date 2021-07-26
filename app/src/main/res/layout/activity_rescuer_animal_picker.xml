@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pethome.storeapp.ui.rescuers.animal.RescuerAnimalPickerActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_rescuer_animal_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <!-- SearchView for searching animals -->
+        <FrameLayout
+            android:id="@+id/frame_rescuer_animal_picker_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/frame_rescuer_animal_picker_search_margin_bottom"
+            android:background="@android:color/white">
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/search_view_rescuer_animal_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                app:iconifiedByDefault="false"
+                app:queryHint="@string/rescuer_animal_picker_search_hint" />
+
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/content_rescuer_animal_picker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

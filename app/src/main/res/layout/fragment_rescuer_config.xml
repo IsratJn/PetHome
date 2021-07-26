@@ -1,0 +1,243 @@
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rescuerConfigBackgroundColor"
+    android:fillViewport="true"
+    tools:context="com.example.pethome.storeapp.ui.rescuers.config.RescuerConfigActivityFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_rescuer_config_left_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/guideline_rescuer_config_horizontal_keyline" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_rescuer_config_right_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/guideline_rescuer_config_horizontal_keyline" />
+
+        <TextView
+            android:id="@+id/text_rescuer_config_name_label"
+            style="@style/RescuerConfigTextLabelStyle"
+            android:text="@string/rescuer_config_label_name"
+            app:layout_constraintBaseline_toBaselineOf="@+id/edittext_rescuer_config_name"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintStart_toStartOf="@+id/guideline_rescuer_config_left_vertical" />
+
+        <EditText
+            android:id="@+id/edittext_rescuer_config_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/edittext_rescuer_config_name_margin_left"
+            android:layout_marginStart="@dimen/edittext_rescuer_config_name_margin_left"
+            android:layout_marginTop="@dimen/rescuer_config_vertical_margin"
+            android:background="@drawable/shape_rescuer_config_edit_box"
+            android:inputType="text|textAutoComplete|textCapSentences"
+            android:theme="@style/RescuerConfigTextInputTheme"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toRightOf="@+id/barrier_rescuer_config_left_labels"
+            app:layout_constraintRight_toRightOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintStart_toEndOf="@+id/barrier_rescuer_config_left_labels"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_rescuer_config_code_label"
+            style="@style/RescuerConfigTextLabelStyle"
+            android:text="@string/rescuer_config_label_code"
+            app:layout_constraintBottom_toBottomOf="@+id/textinput_rescuer_config_code"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintStart_toStartOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintTop_toTopOf="@+id/textinput_rescuer_config_code" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textinput_rescuer_config_code"
+            style="@style/RescuerConfigTextInputStyle"
+            android:layout_marginTop="@dimen/rescuer_config_vertical_margin"
+            android:theme="@style/RescuerConfigTextInputTheme"
+            app:counterEnabled="true"
+            app:counterMaxLength="@integer/rescuer_config_code_max_length"
+            app:errorEnabled="true"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/edittext_rescuer_config_name"
+            app:layout_constraintRight_toRightOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintStart_toStartOf="@+id/edittext_rescuer_config_name"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_rescuer_config_name">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edittext_rescuer_config_code"
+                style="@style/RescuerConfigTextInputEditTextStyle"
+                android:inputType="text|textNoSuggestions"
+                android:maxLength="@integer/rescuer_config_code_max_length" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier_rescuer_config_left_labels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="right"
+            app:constraint_referenced_ids="text_rescuer_config_name_label" />
+
+        <View
+            android:id="@+id/divider_rescuer_config_info_phone_1"
+            style="@style/BaseRescuerConfigDividerStyle.Divider1"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintRight_toRightOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintStart_toStartOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/textinput_rescuer_config_code" />
+
+        <View
+            android:id="@+id/divider_rescuer_config_info_phone_2"
+            style="@style/BaseRescuerConfigDividerStyle.Divider2"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintRight_toRightOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintStart_toStartOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/divider_rescuer_config_info_phone_1" />
+
+        <TextView
+            android:id="@+id/text_rescuer_config_contact_phone_title"
+            style="@style/RescuerConfigSectionTitleTextStyle"
+            android:text="@string/rescuer_config_title_phone_section"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintRight_toRightOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintStart_toStartOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/divider_rescuer_config_info_phone_2" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_rescuer_config_phone"
+            style="@style/RescuerConfigRecyclerViewStyle"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintRight_toRightOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintStart_toStartOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/text_rescuer_config_contact_phone_title"
+            tools:listitem="@layout/item_rescuer_config_contact" />
+
+        <Button
+            android:id="@+id/btn_rescuer_config_add_phone"
+            style="@style/RescuerConfigButtonAddStyle"
+            android:text="@string/rescuer_config_btn_label_add_phone"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintRight_toRightOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintStart_toStartOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview_rescuer_config_phone" />
+
+        <View
+            android:id="@+id/divider_rescuer_config_phone_email_1"
+            style="@style/BaseRescuerConfigDividerStyle.Divider1"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintRight_toRightOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintStart_toStartOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/btn_rescuer_config_add_phone" />
+
+        <View
+            android:id="@+id/divider_rescuer_config_phone_email_2"
+            style="@style/BaseRescuerConfigDividerStyle.Divider2"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintRight_toRightOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintStart_toStartOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/divider_rescuer_config_phone_email_1" />
+
+        <TextView
+            android:id="@+id/text_rescuer_config_contact_email_title"
+            style="@style/RescuerConfigSectionTitleTextStyle"
+            android:text="@string/rescuer_config_title_email_section"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintRight_toRightOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintStart_toStartOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/divider_rescuer_config_phone_email_2" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_rescuer_config_email"
+            style="@style/RescuerConfigRecyclerViewStyle"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintRight_toRightOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintStart_toStartOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/text_rescuer_config_contact_email_title"
+            tools:listitem="@layout/item_rescuer_config_contact" />
+
+        <Button
+            android:id="@+id/btn_rescuer_config_add_email"
+            style="@style/RescuerConfigButtonAddStyle"
+            android:text="@string/rescuer_config_btn_label_add_email"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintRight_toRightOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintStart_toStartOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview_rescuer_config_email" />
+
+        <View
+            android:id="@+id/divider_rescuer_config_email_items_1"
+            style="@style/BaseRescuerConfigDividerStyle.Divider1"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintRight_toRightOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintStart_toStartOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/btn_rescuer_config_add_email" />
+
+        <View
+            android:id="@+id/divider_rescuer_config_email_items_2"
+            style="@style/BaseRescuerConfigDividerStyle.Divider2"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintRight_toRightOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintStart_toStartOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/divider_rescuer_config_email_items_1" />
+
+        <TextView
+            android:id="@+id/text_rescuer_config_items_title"
+            style="@style/RescuerConfigSectionTitleTextStyle"
+            android:text="@string/rescuer_config_title_items_section"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintRight_toRightOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintStart_toStartOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/divider_rescuer_config_email_items_2" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_rescuer_config_items"
+            style="@style/RescuerConfigRecyclerViewStyle"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintRight_toRightOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintStart_toStartOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/text_rescuer_config_items_title"
+            tools:listitem="@layout/item_rescuer_config_animal" />
+
+        <Button
+            android:id="@+id/btn_rescuer_config_add_item"
+            style="@style/RescuerConfigButtonAddStyle"
+            android:layout_marginBottom="@dimen/rescuer_config_vertical_margin"
+            android:text="@string/rescuer_config_btn_label_add_item"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintRight_toRightOf="@+id/guideline_rescuer_config_right_vertical"
+            app:layout_constraintStart_toStartOf="@+id/guideline_rescuer_config_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview_rescuer_config_items"
+            app:layout_constraintVertical_bias="0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

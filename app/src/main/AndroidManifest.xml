@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pethome.storeapp">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:name=".ui.StoreApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:enabled="true"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <provider
+            android:name=".data.local.StoreContentProvider"
+            android:authorities="com.example.pethome.storeapp.provider"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:theme="@style/AppTheme.Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.animals.config.AnimalConfigActivity"
+            android:label="@string/animal_config_title_add_animal"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ui.animals.image.AnimalImageActivity"
+            android:label="@string/animal_image_title"
+            android:parentActivityName=".ui.animals.config.AnimalConfigActivity"
+            android:theme="@style/AppTheme.AnimalImage"
+            tools:targetApi="jelly_bean">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pethome.storeapp.ui.animals.config.AnimalConfigActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.rescuers.config.RescuerConfigActivity"
+            android:label="@string/rescuer_config_title_add_rescuer"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ui.rescuers.animal.RescuerAnimalPickerActivity"
+            android:label="@string/rescuer_animal_picker_title"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ui.adoptions.config.AdoptionsConfigActivity"
+            android:label="@string/adoptions_config_title_edit_adoptions"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+</manifest>

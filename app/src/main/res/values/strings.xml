@@ -1,0 +1,360 @@
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">PetHome</string>
+
+    <!-- ============================== -->
+    <!-- COMMON STRINGS USED IN THE APP -->
+    <!-- ============================== -->
+    <!-- Common Menu/Button Actions -->
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+
+    <!-- Common Snackbar Actions -->
+    <string name="snackbar_action_ok">OK</string>
+    <string name="snackbar_action_undo">UNDO</string>
+
+    <!-- Default Transition Name used for the animal ImageViews with default Image -->
+    <string name="transition_name_animal_photo">StoreApp.animalPhoto</string>
+
+    <!-- ============================= -->
+    <!-- STRINGS USED IN MAIN ACTIVITY -->
+    <!-- ============================= -->
+
+    <!-- ================================================ -->
+    <!-- STRINGS USED IN animal CONFIG ACTIVITY/FRAGMENT -->
+    <!-- ================================================ -->
+    <string name="animal_config_title_add_animal">Add animal</string>
+    <string name="animal_config_label_name">Name</string>
+    <string name="animal_config_hint_description">Description</string>
+    <string name="animal_config_label_category">Category</string>
+    <string name="animal_config_label_attrs">Additional Attributes</string>
+    <string name="animal_config_btn_label_add_more_attrs">Add more</string>
+    <string name="animal_config_spinner_category_prompt">Select Category</string>
+    <string name="animal_config_attr_hint_name">Name</string>
+    <string name="animal_config_attr_hint_value">Value</string>
+    <string name="animal_config_empty_fields_validation_error">
+        All fields are required except for animal Attributes and Images.
+        Please fill and then click on \'Save\'.
+    </string>
+    <string name="animal_config_attrs_partial_empty_fields_validation_error">
+        Incomplete animal Attributes found.
+        Please fill the missing details and then click on \'Save\'.
+    </string>
+    <string name="animal_config_attrs_name_conflict_error">
+        <!-- Output will be like 'Attribute Name 'Width' has been defined more than once. Remove the duplicate.' -->
+        Attribute Name \'<xliff:g example="Width" id="attr_name">%1$s</xliff:g>\' has been defined more than once. Remove the duplicate.
+    </string>
+    <string name="animal_config_no_animal_found_error">
+        <!-- Output will be like 'No animal Found for Item Id 101' -->
+        No animal Found for Item Id <xliff:g example="101" id="item_id">%1$d</xliff:g>
+    </string>
+    <string name="animal_config_category_null_error">
+        <!-- Output will be like 'NULL Id found for Category 'Sports'. Data may be inconsistent.' -->
+        NULL Id found for Category \'<xliff:g example="Sports" id="category_name">%1$s</xliff:g>\'. Data may be inconsistent.
+    </string>
+    <string name="animal_config_insert_category_error">
+        <!-- Output will be like 'Failed to insert Category for Sports' -->
+        Failed to insert Category for <xliff:g example="Sports" id="category_name">%1$s</xliff:g>
+    </string>
+    <string name="animal_config_insert_item_error">
+        <!-- Output will be like 'Failed to insert item for Bat' -->
+        Failed to insert Item for <xliff:g example="Bat" id="item_name">%1$s</xliff:g>
+    </string>
+    <string name="animal_config_insert_item_addtnl_dtls_error">
+        <!-- Output will be like 'Failed to insert the Attributes and/or Images of Item
+        'Bat' with Animal with petcode #A11223445' -->
+        Failed to insert the Attributes and/or Images of Item
+        \'<xliff:g example="Bat" id="item_name">%1$s</xliff:g>\'
+        with Animal with petcode #<xliff:g example="A11223445" id="item_sku">%1$s</xliff:g>
+    </string>
+    <string name="animal_config_update_category_error">
+        <!-- Output will be like 'Animal with petcode #A11223445 Update: Failed to insert Category for Sports' -->
+        Animal with petcode #<xliff:g example="A11223445" id="item_sku">%1$s</xliff:g> Update: Failed to insert Category for <xliff:g example="Sports" id="category_name">%1$s</xliff:g>
+    </string>
+    <string name="animal_config_update_item_error">
+        <!-- Output will be like 'Animal with petcode #A11223445 Update: Failed to update Item data' -->
+        Animal with petcode #<xliff:g example="A11223445" id="item_sku">%1$s</xliff:g> Update: Failed to update Item data
+    </string>
+    <string name="animal_config_update_item_inconsistent_error">
+        <!-- Output will be like 'Animal with petcode #A11223445 Update: More than one record of Item was updated. Data may be inconsistent.' -->
+        Animal with petcode #<xliff:g example="A11223445" id="item_sku">%1$s</xliff:g> Update: More than one record of Item was updated. Data may be inconsistent.
+    </string>
+    <string name="animal_config_update_item_addtnl_dtls_error">
+        <!-- Output will be like 'Animal with petcode #A11223445 Update: Failed to insert the Attributes and/or Images of Item.' -->
+        Animal with petcode #<xliff:g example="A11223445" id="item_sku">%1$s</xliff:g> Update: Failed to insert the Attributes and/or Images of Item.
+    </string>
+    <string name="animal_config_update_item_images_error">
+        <!-- Output will be like 'Animal with petcode #A11223445 Update: Failed to insert/erase the Images of Item.' -->
+        Animal with petcode #<xliff:g example="A11223445" id="item_sku">%1$s</xliff:g> Update: Failed to insert/erase the Images of Item.
+    </string>
+    <string name="animal_config_update_item_images_success">
+        <!-- Output will be like 'Animal with petcode #A11223445 Update: Image(s) of Item were successfully updated/erased.' -->
+        Animal with petcode #<xliff:g example="A11223445" id="item_sku">%1$s</xliff:g> Update: Image(s) of Item were successfully updated/erased.
+    </string>
+    <string name="animal_config_delete_item_error">
+        <!-- Output will be like 'Failed to delete the Item Id 101' -->
+        Failed to delete the Item Id <xliff:g example="101" id="item_id">%1$d</xliff:g>
+    </string>
+    <string name="animal_config_delete_animal_confirm_dialog_message">Delete animal?</string>
+    <string name="animal_config_sku_invalid_error">animal SKU needs to be Unique.\nTry a different one.</string>
+    <string name="animal_config_sku_empty_error">animal SKU is a mandatory field.</string>
+    <string name="animal_config_unsaved_changes_dialog_message">Unsaved changes found?</string>
+    <string name="animal_config_unsaved_changes_dialog_positive_text">Save</string>
+    <string name="animal_config_unsaved_changes_dialog_negative_text">Discard</string>
+    <string name="animal_config_unsaved_changes_dialog_neutral_text">Keep Editing</string>
+    <string name="animal_config_status_loading_existing_animal">Loading animal details…</string>
+    <string name="animal_config_status_saving">Saving animal details…</string>
+    <string name="animal_config_status_deleting">Deleting animal…</string>
+
+    <!-- =============================================== -->
+    <!-- STRINGS USED IN animal IMAGE ACTIVITY/FRAGMENT -->
+    <!-- =============================================== -->
+    <string name="animal_image_title">animal Images</string>
+    <string name="animal_image_save_error">Failed to save the image taken.</string>
+    <string name="animal_image_disk_not_mounted_save_error">Cannot save any image when the external storage is unmounted. Disconnect from PC and try again.</string>
+    <string name="animal_image_no_camera_hardware_error">Device does not have Camera hardware to take a picture.</string>
+    <string name="animal_image_picker_chooser_title">Select Image(s) for the animal</string>
+    <string name="animal_image_already_picked_message">One of the Image(s) picked is already present in the list</string>
+    <string name="animal_image_action_select">Select</string>
+    <string name="animal_image_contextual_action_delete_title">Delete images</string>
+    <string name="animal_image_contextual_action_delete_live_count">
+        <!-- Output will be like '10 selected' -->
+        <xliff:g example="10" id="image_count">%1$d</xliff:g> selected
+    </string>
+    <string name="animal_image_delete_error">Some image files could not be deleted. This will include the files NOT created by the app. Please delete them manually later.</string>
+    <string name="animal_image_delete_success">Selected animal Images deleted successfully.</string>
+    <string name="animal_image_unsaved_changes_dialog_message">Save selected image as Default?</string>
+    <string name="animal_image_unsaved_changes_dialog_positive_text">Save</string>
+    <string name="animal_image_unsaved_changes_dialog_negative_text">Ignore</string>
+    <string name="animal_image_status_loading_picked_single">Loading Image picked…</string>
+    <string name="animal_image_status_loading_picked_multiple">Loading Image(s) picked…</string>
+    <string name="animal_image_status_saving_capture">Saving Image captured…</string>
+    <string name="animal_image_status_deleting">Deleting Image(s)…</string>
+    <string name="animal_image_empty_text">Tap the \"+\" button below to add the Images for the animal.</string>
+
+    <!-- ==================================================== -->
+    <!-- STRINGS USED IN animal IMAGE PICKER DIALOG FRAGMENT -->
+    <!-- ==================================================== -->
+    <string name="animal_image_picker_label_camera">Take\nPhoto</string>
+    <string name="animal_image_picker_label_gallery">Pick from\nGallery</string>
+    <string name="animal_image_picker_action_close">Close</string>
+
+    <!-- ===================================== -->
+    <!-- STRINGS USED IN animal LIST FRAGMENT -->
+    <!-- ===================================== -->
+    <string name="animal_list_item_add_success">
+        <!-- Output will be like 'New Item with SKU #A11223445 added successfully.' -->
+        New animal with SKU #<xliff:g example="A11223445" id="item_sku">%1$s</xliff:g> added successfully.
+    </string>
+    <string name="animal_list_item_update_success">
+        <!-- Output will be like 'Animal with petcode #A11223445 updated successfully.' -->
+        Animal with petcode #<xliff:g example="A11223445" id="item_sku">%1$s</xliff:g> updated successfully.
+    </string>
+    <string name="animal_list_item_delete_success">
+        <!-- Output will be like 'Animal with petcode #A11223445 deleted successfully.' -->
+        Animal with petcode #<xliff:g example="A11223445" id="item_sku">%1$s</xliff:g> deleted successfully.
+    </string>
+    <string name="animal_list_load_error">Error while loading animals.</string>
+
+    <!-- ================================================= -->
+    <!-- STRINGS USED IN RESCUER CONFIG ACTIVITY/FRAGMENT -->
+    <!-- ================================================= -->
+    <string name="rescuer_config_label_name">Name</string>
+    <string name="rescuer_config_label_code">Code</string>
+    <string name="rescuer_config_title_phone_section">Contact Details : Phone</string>
+    <string name="rescuer_config_title_email_section">Contact Details : Email</string>
+    <string name="rescuer_config_title_items_section">Rescued animals</string>
+    <string name="rescuer_config_btn_label_add_phone">Add Phone</string>
+    <string name="rescuer_config_btn_label_add_email">Add Email</string>
+    <string name="rescuer_config_btn_label_add_item">Add Item</string>
+    <string name="rescuer_config_title_add_rescuer">Add Rescuer</string>
+    <!-- For the Rescuer Contact Items -->
+    <string name="rescuer_config_item_contact_label_default">Default</string>
+    <string name="rescuer_config_status_loading_existing_rescuer">Loading Rescuer details…</string>
+    <string name="rescuer_config_code_invalid_error">The Code needs to be Unique.\nTry a different one.</string>
+    <string name="rescuer_config_no_rescuer_found_error">
+        <!-- Output will be like 'No Rescuer Found for Rescuer Id 101' -->
+        No Rescuer Found for Rescuer Id <xliff:g example="101" id="rescuer_id">%1$d</xliff:g>
+    </string>
+    <string name="rescuer_config_code_empty_error">Rescuer Code is a mandatory field.</string>
+    <string name="rescuer_config_item_contact_duplicate_error">Duplicate Contacts are not allowed.</string>
+    <string name="rescuer_config_item_contact_hint_phone">Phone Number</string>
+    <string name="rescuer_config_item_animal_label_price">
+        <!-- Output will be like 'Selling Price:($)' -->
+<!--        Selling Price:(<xliff:g example="T" id="currency_symbol">%1$s</xliff:g>)-->
+        " "
+    </string>
+    <string name="rescuer_config_status_saving">Saving Rescuer details…</string>
+    <string name="rescuer_config_status_deleting">Deleting Rescuer…</string>
+    <string name="rescuer_config_empty_fields_validation_error">
+        No field can be left empty. Please fill and then click on \'Save\'.
+    </string>
+    <string name="rescuer_config_phone_contact_conflict_error">
+        <!-- Output will be like 'Contact Phone '9898900001' has been defined more than once. Remove the duplicate.' -->
+        Contact Phone \'<xliff:g example="9898900001" id="phone_number">%1$s</xliff:g>\' has been defined more than once. Remove the duplicate.
+    </string>
+    <string name="rescuer_config_email_contact_conflict_error">
+        <!-- Output will be like 'Contact Email 'xyz@rescuer.com' has been defined more than once. Remove the duplicate.' -->
+        Contact Email \'<xliff:g example="xyz@rescuer.com" id="email_id">%1$s</xliff:g>\' has been defined more than once. Remove the duplicate.
+    </string>
+    <string name="rescuer_config_empty_contacts_error">No Contacts found for the Rescuer. Minimum one Contact needs to be configured.</string>
+    <string name="rescuer_config_phone_contacts_invalid_error">Some Phone Contacts are still invalid. Please correct and then click save.</string>
+    <string name="rescuer_config_email_contacts_invalid_error">Some Email Contacts are still invalid. Please correct and then click save.</string>
+    <string name="rescuer_config_insert_rescuer_error">
+        <!-- Output will be like 'Failed to insert Rescuer record for Frontline Inc.' -->
+        Failed to insert Rescuer record for <xliff:g example="Frontline Inc." id="rescuer_name">%1$s</xliff:g>
+    </string>
+    <string name="rescuer_config_insert_rescuer_addtnl_dtls_error">
+        <!-- Output will be like 'Failed to insert Rescuer's Contacts and Items with their Price Info for the Rescuer
+        'Frontline Inc.' with Code #126227' -->
+        Failed to insert Rescuer\'s Contacts and Items with their Price Info for the Rescuer
+        \'<xliff:g example="Frontline Inc." id="rescuer_name">%1$s</xliff:g>\'
+        with Code #<xliff:g example="126227" id="rescuer_code">%1$s</xliff:g>
+    </string>
+    <string name="rescuer_config_update_rescuer_error">
+        <!-- Output will be like 'Rescuer Code #126227 Update: Failed to update Rescuer data' -->
+        Rescuer Code #<xliff:g example="126227" id="rescuer_code">%1$s</xliff:g> Update: Failed to update Rescuer data
+    </string>
+    <string name="rescuer_config_update_rescuer_inconsistent_error">
+        <!-- Output will be like 'Rescuer Code #126227 Update: More than one record of Rescuer was updated. Data may be inconsistent.' -->
+        Rescuer Code #<xliff:g example="126227" id="rescuer_code">%1$s</xliff:g> Update: More than one record of Rescuer was updated. Data may be inconsistent.
+    </string>
+    <string name="rescuer_config_update_rescuer_addtnl_dtls_error">
+        <!-- Output will be like 'Rescuer Code #126227 Update: Failed to insert/delete Rescuer's Contacts and Items with their Price Info.' -->
+        Rescuer Code #<xliff:g example="126227" id="rescuer_code">%1$s</xliff:g> Update: Failed to insert/delete Rescuer\'s Contacts and Items with their Price Info.
+    </string>
+    <string name="rescuer_config_delete_rescuer_error">
+        <!-- Output will be like 'Failed to delete the Rescuer Id 101' -->
+        Failed to delete the Rescuer Id <xliff:g example="101" id="rescuer_id">%1$d</xliff:g>
+    </string>
+    <string name="rescuer_config_delete_rescuer_confirm_dialog_message">Delete Rescuer?</string>
+    <string name="rescuer_config_unsaved_changes_dialog_message">Unsaved changes found?</string>
+    <string name="rescuer_config_unsaved_changes_dialog_positive_text">Save</string>
+    <string name="rescuer_config_unsaved_changes_dialog_negative_text">Discard</string>
+    <string name="rescuer_config_unsaved_changes_dialog_neutral_text">Keep Editing</string>
+    <string name="rescuer_config_animal_swipe_action_success">
+        <!-- Output will be like 'Animal with petcode #A11223445 has been removed from the Rescuer.' -->
+        Animal with petcode #<xliff:g example="A11223445" id="item_sku">%1$s</xliff:g> has been removed from the Rescuer.
+    </string>
+    <string name="rescuer_config_animal_swipe_action_undo_success">
+        <!-- Output will be like 'Animal with petcode #A11223445 has been restored for the Rescuer.' -->
+        Animal with petcode #<xliff:g example="A11223445" id="item_sku">%1$s</xliff:g> has been restored for the Rescuer.
+    </string>
+    <string name="rescuer_config_phone_number_invalid_error">
+        <!-- Output will be like 'Phone Number is invalid. Ensure that it has 4-15 digits.' -->
+        Phone Number is invalid. Ensure that it has <xliff:g example="4" id="min_length">%1$d</xliff:g>-<xliff:g example="15" id="max_length">%2$d</xliff:g> digits.
+    </string>
+    <string name="rescuer_config_email_invalid_error">Email is invalid.</string>
+
+    <!-- ========================================================= -->
+    <!-- STRINGS USED IN RESCUER animal PICKER ACTIVITY/FRAGMENT -->
+    <!-- ========================================================= -->
+    <string name="rescuer_animal_picker_title">animal Picker</string>
+    <string name="rescuer_animal_picker_search_hint">animal Name/Code/Category</string>
+    <string name="rescuer_animal_picker_list_empty_all_picked">All available animals are already picked.</string>
+    <string name="rescuer_animal_picker_list_empty_no_animal">No animal seems to be configured.</string>
+    <string name="rescuer_animal_picker_empty_search_result">
+        <!-- Output will be like 'Could not find any animal with Name/SKU/Category containing A11223445. Try another search.' -->
+        Could not find any animal with Name/Code/Category containing \'<xliff:g example="A11223445" id="item_name_sku_category">%1$s</xliff:g>\'. Try another search.
+    </string>
+    <string name="rescuer_animal_picker_status_loading_animals">Loading animals\navailable to pick…</string>
+    <string name="rescuer_animal_picker_action_pick_live_count">
+        <!-- Output will be like '10 selected' -->
+        <xliff:g example="10" id="animal_count">%1$d</xliff:g> selected
+    </string>
+    <string name="rescuer_animal_picker_unsaved_changes_dialog_message">Unsaved changes found?</string>
+    <string name="rescuer_animal_picker_unsaved_changes_dialog_positive_text">Save</string>
+    <string name="rescuer_animal_picker_unsaved_changes_dialog_negative_text">Discard</string>
+    <string name="rescuer_animal_picker_unsaved_changes_dialog_neutral_text">Stay Here</string>
+
+    <!-- ====================================== -->
+    <!-- STRINGS USED IN RESCUER LIST FRAGMENT -->
+    <!-- ====================================== -->
+    <string name="rescuer_list_item_animals_count_desc">
+        <!-- Output will be like 'Sells 22 items' -->
+        Has <xliff:g example="22" id="item_count">%1$d</xliff:g> items
+    </string>
+    <string name="rescuer_list_load_error">Error while loading Rescuers.</string>
+    <string name="rescuer_list_item_add_success">
+        <!-- Output will be like 'New Rescuer with Code #126227 added successfully.' -->
+        New Rescuer with Code #<xliff:g example="126227" id="rescuer_code">%1$s</xliff:g> added successfully.
+    </string>
+    <string name="rescuer_list_item_update_success">
+        <!-- Output will be like 'Rescuer Code #126227 updated successfully.' -->
+        Rescuer Code #<xliff:g example="126227" id="rescuer_code">%1$s</xliff:g> updated successfully.
+    </string>
+    <string name="rescuer_list_item_delete_success">
+        <!-- Output will be like 'Rescuer Code #126227 deleted successfully.' -->
+        Rescuer Code #<xliff:g example="126227" id="rescuer_code">%1$s</xliff:g> deleted successfully.
+    </string>
+
+    <!-- =================================== -->
+    <!-- STRINGS USED IN ADOPTIONS LIST FRAGMENT -->
+    <!-- =================================== -->
+    <string name="adoptions_list_item_total_available">
+        <!-- Output will be like 'Total Available Quantity : 22' -->
+        Total Available Quantity : &lt;b&gt;<xliff:g example="22" id="quantity">%1$d</xliff:g>&lt;/b&gt;
+    </string>
+    <string name="adoptions_list_item_rescuer_name_code_format">
+        <!-- Output will be like 'Frontline Inc. (126227)' -->
+        <xliff:g example="Frontline Inc." id="rescuer_name">%1$s</xliff:g> (<xliff:g example="126227" id="rescuer_code">%2$s</xliff:g>)
+    </string>
+    <string name="adoptions_list_item_rescuer_rescuing_price">
+        <!-- Output will be like 'Sells at 270.55 INR' -->
+<!--        Sells/Rescued at <xliff:g example="270.55 INR" id="rescuing_price">%1$s</xliff:g>-->
+        ""
+    </string>
+    <string name="adoptions_list_item_top_rescuer_title">Top Rescuer</string>
+    <string name="adoptions_list_item_action_delete_animal">Delete</string>
+    <string name="adoptions_list_item_action_sell">Give Adoption 1</string>
+    <string name="adoptions_list_item_out_of_stock">No rescue</string>
+    <string name="adoptions_list_load_error">Error while loading animals with given data.</string>
+    <string name="adoptions_list_item_decrease_availability_error">
+        <!-- Output will be like 'Failed to decrease the quantity of the animal #A11223445 sold by the Rescuer #126227.' -->
+        Failed to decrease the quantity #<xliff:g example="A11223445" id="item_sku">%1$s</xliff:g> rescued by the Rescuer #<xliff:g example="126227" id="rescuer_code">%2$s</xliff:g>.
+    </string>
+    <string name="adoptions_list_item_sell_success">
+        <!-- Output will be like 'One quantity of the animal #A11223445 sold successfully by the Rescuer #126227.' -->
+        An animal with petcode #<xliff:g example="A11223445" id="item_sku">%1$s</xliff:g>was given to adoption successfully by #<xliff:g example="126227" id="rescuer_code">%2$s</xliff:g>.
+    </string>
+    <string name="adoptions_list_item_label_available">available</string>
+    <string name="adoptions_list_item_update_inventory_success">
+        <!-- Output will be like 'Animal with petcode #A11223445 updated with inventory successfully.' -->
+        Petcode
+        #<xliff:g example="A11223445" id="item_sku">%1$s</xliff:g> updated with info successfully.
+    </string>
+
+
+    <!-- ============================================== -->
+    <!-- STRINGS USED IN ADOPTIONS CONFIG ACTIVITY/FRAGMENT -->
+    <!-- ============================================== -->
+    <string name="adoptions_config_title_edit_adoptions">Edit Adoptions</string>
+    <string name="adoptions_config_item_rescuer_rescuing_price">"Rescued More?"
+        <!-- Output will be like 'Sells at 270.55 INR' -->
+<!--        Rescued/Adoptions at <xliff:g example="270.55 INR" id="rescuing_price">%1$s</xliff:g>-->
+    </string>
+    <string name="adoptions_config_title_rescuers_section">Rescuers</string>
+    <string name="adoptions_config_title_total_available">Available</string>
+    <string name="adoptions_config_status_loading_rescuers">Loading Rescuers\nwith adoptions details…</string>
+    <string name="adoptions_config_status_saving">Saving the data…</string>
+    <string name="adoptions_config_rescuer_swipe_action_success">
+        <!-- Output will be like 'Rescuer Code #126227 has been removed from the animal. -->
+        Rescuer Code #<xliff:g example="126227" id="rescuer_code">%1$s</xliff:g> has been removed from the animals.
+    </string>
+    <string name="adoptions_config_rescuer_swipe_action_undo_success">
+        <!-- Output will be like 'Rescuer Code #126227 has been restored for the animal. -->
+        Rescuer Code #<xliff:g example="126227" id="rescuer_code">%1$s</xliff:g> has been restored for the animals.
+    </string>
+    <string name="adoptions_config_inventory_update_error">
+        <!-- Output will be like 'Failed to update the inventory of the animal #A11223445.' -->
+        Failed to update the home of the animals #<xliff:g example="A11223445" id="item_sku">%1$s</xliff:g>.
+    </string>
+    <string name="adoptions_config_unsaved_changes_dialog_message">Unsaved changes found?</string>
+    <string name="adoptions_config_unsaved_changes_dialog_positive_text">Save</string>
+    <string name="adoptions_config_unsaved_changes_dialog_negative_text">Discard</string>
+    <string name="adoptions_config_unsaved_changes_dialog_neutral_text">Keep Editing</string>
+    <string name="adoptions_config_delete_animal_confirm_dialog_message">Delete animal?</string>
+
+
+</resources>

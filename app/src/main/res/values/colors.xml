@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- APP THEME COLORS -->
+    <color name="colorPrimary">#373B59</color>
+    <color name="colorPrimaryDark">#222742</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- Default Background color used in the App -->
+    <color name="mainBackgroundColor">#EDEEF0</color>
+
+    <!-- COMMON APP COLORS -->
+    <color name="textInputErrorColor">#d50000</color>
+    <color name="textInputCounterColor">#FF3D00</color>
+    <color name="textInputHintColor">#696969</color>
+
+
+    <!-- MAIN ACTIVITY VIEWPAGER TAB COLORS -->
+    <color name="mainTabIndicatorColor">#FF9800</color>
+    <color name="mainTabTitleTextColor">#FF9800</color>
+    <color name="mainTabIconDefaultColor">#7486A8</color>
+    <color name="mainTabIconSelectedColor">@color/mainTabTitleTextColor</color>
+    <color name="mainAnimalListFabColor">#a7ffeb</color>
+    <color name="mainRescuerListFabColor">#82b1ff</color>
+
+    <!-- ANIMAL CONFIG ACTIVITY/FRAGMENT COLORS -->
+    <color name="animalConfigBackgroundColor">#b2dfdb</color>
+    <color name="animalConfigTextInputActivatedColor">#2962ff</color>
+    <color name="animalConfigInputFieldsBackgroundColor">#E5F0CF</color>
+    <color name="animalConfigSpinnerCategoryDropdownItemBackgroundColor">#FCFFF5</color>
+
+    <!-- ANIMAL IMAGE PICKER DIALOG FRAGMENT COLORS -->
+    <color name="animalImagePickerBackgroundColor">#303F46</color>
+    <color name="animalImageButtonLabelCloseColor">#FFD740</color>
+
+    <!-- ANIMAL IMAGE ACTIVITY/FRAGMENT COLORS -->
+    <color name="animalImageItemPhotoBackgroundDefaultColor">#E5F0CF</color>
+    <color name="animalImageItemPhotoBackgroundSelectColor">#38b137</color>
+    <color name="animalImageItemPhotoBackgroundDeleteColor">#fa3913</color>
+    <color name="animalImageFabColor">#FFAB40</color>
+
+    <!-- ANIMAL LIST FRAGMENT COLORS -->
+    <color name="animalListItemDividerColor">#757575</color>
+    <color name="animalListItemButtonLabelDeleteColor">#fa3913</color>
+    <color name="animalListItemButtonLabelEditColor">#356ac3</color>
+
+    <!-- RESCUER CONFIG ACTIVITY/FRAGMENT COLORS -->
+    <color name="rescuerConfigBackgroundColor">#64b5f6</color>
+    <color name="rescuerConfigInputFieldsBackgroundColor">#b3e5fc</color>
+    <color name="rescuerConfigTextInputActivatedColor">#2962ff</color>
+    <color name="rescuerConfigSectionDividerColor">#0d47a1</color>
+
+    <!-- RESCUER LIST FRAGMENT COLORS -->
+    <color name="rescuerListItemDividerColor">#757575</color>
+    <color name="rescuerListItemButtonLabelDeleteColor">#fa3913</color>
+    <color name="rescuerListItemButtonLabelEditColor">#356ac3</color>
+
+    <!-- ADOPTIONS LIST FRAGMENT COLORS -->
+    <color name="adoptionsListItemDividerColor">#757575</color>
+    <color name="adoptionsListItemButtonLabelDeleteColor">#fa3913</color>
+    <color name="adoptionsListItemButtonLabelSellColor">#38b137</color>
+    <color name="adoptionsListItemOutOfStockColor">#fa3913</color>
+    <color name="adoptionsListItemRescuerAvailabilityColor">#673ab7</color>
+    <color name="adoptionsListItemTotalAvailableColor">#009688</color>
+
+
+    <!-- ADOPTIONS CONFIG ACTIVITY/FRAGMENT COLORS -->
+    <color name="adoptionsConfigBackgroundColor">#4db6ac</color>
+    <color name="adoptionsConfigSectionDividerColor">#004d40</color>
+    <color name="adoptionsConfigInputFieldsBackgroundColor">#b2dfdb</color>
+    <color name="adoptionsConfigTextInputActivatedColor">#00796b</color>
+    <color name="adoptionsConfigItemRescuerButtonLabelEditColor">#356ac3</color>
+
+
+</resources>

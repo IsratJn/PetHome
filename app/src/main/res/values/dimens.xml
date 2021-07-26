@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- MATCH CONSTRAINT Dimension used for ConstraintLayouts -->
+    <dimen name="match_constraint_0dp">0dp</dimen>
+
+    <!-- Dimension used for LinearLayouts -->
+    <dimen name="size_by_weight_0dp">0dp</dimen>
+
+    <!-- ========================= -->
+    <!-- FOR ALL DESIGN COMPONENTS -->
+    <!-- ========================= -->
+    <dimen name="btn_material_size">48dp</dimen>
+    <dimen name="fab_material_margin">16dp</dimen>
+    <dimen name="fab_material_normal_size">56dp</dimen>
+    <dimen name="dialog_material_elevation">24dp</dimen>
+
+    <!-- For All Label Buttons -->
+    <dimen name="btn_label_material_height">36dp</dimen>
+    <dimen name="btn_label_material_min_width">64dp</dimen>
+    <dimen name="btn_label_material_padding_left">8dp</dimen>
+    <dimen name="btn_label_material_padding_right">8dp</dimen>
+
+    <!-- For the Common Card used in the app -->
+    <dimen name="card_all_corner_radius">4dp</dimen>
+    <dimen name="card_all_inner_padding">8dp</dimen>
+
+    <!-- ============================== -->
+    <!-- FOR THE MAIN ACTIVITY/FRAGMENT -->
+    <!-- ============================== -->
+    <!-- Indicator height of the selected Tab in TabLayout -->
+    <dimen name="tab_main_indicator_height">4dp</dimen>
+    <!-- For the custom Tabs in TabLayout -->
+    <dimen name="image_main_tab_icon_margin_right">6dp</dimen>
+    <dimen name="text_main_tab_title_size">16sp</dimen>
+
+    <!-- ======================================== -->
+    <!-- FOR THE ANIMAL CONFIG ACTIVITY/FRAGMENT -->
+    <!-- ======================================== -->
+    <dimen name="guideline_animal_config_horizontal_keyline">16dp</dimen>
+    <dimen name="image_animal_config_item_photo_height">200dp</dimen>
+    <dimen name="image_animal_config_add_photo_padding">8dp</dimen>
+    <dimen name="animal_config_outer_content_margin">16dp</dimen>
+    <dimen name="animal_config_inner_content_margin">8dp</dimen>
+    <dimen name="spinner_animal_config_category_min_width">72dp</dimen>
+    <dimen name="spinner_animal_config_category_max_width">120dp</dimen>
+    <dimen name="spinner_animal_config_category_item_padding">8dp</dimen>
+    <dimen name="edittext_animal_config_category_margin_left">16dp</dimen>
+    <dimen name="text_animal_config_attrs_label_margin_top">24dp</dimen>
+    <!-- For the Additional Attribute Items -->
+    <dimen name="item_animal_config_attr_inner_margin">4dp</dimen>
+
+    <!-- ======================================= -->
+    <!-- FOR THE ANIMAL IMAGE ACTIVITY/FRAGMENT -->
+    <!-- ======================================= -->
+    <dimen name="image_animal_selected_item_photo_height">200dp</dimen>
+    <dimen name="image_item_animal_action_overlay_size">24dp</dimen>
+    <dimen name="image_item_animal_action_overlay_margin">8dp</dimen>
+    <dimen name="image_item_photo_grid_spacing">8dp</dimen>
+    <dimen name="text_animal_image_empty_grid_margin">16dp</dimen>
+    <dimen name="recyclerview_animal_image_photo_grid_horizontal_margin">8dp</dimen>
+    <dimen name="animal_image_vertical_padding">16dp</dimen>
+    <dimen name="image_item_animal_photo_padding">6dp</dimen>
+
+    <!-- ============================================ -->
+    <!-- FOR THE ANIMAL IMAGE PICKER DIALOG FRAGMENT -->
+    <!-- ============================================ -->
+    <dimen name="image_picker_icons_size">72dp</dimen>
+    <dimen name="text_image_picker_size">18sp</dimen>
+    <dimen name="btn_image_picker_action_margin_right">16dp</dimen>
+    <dimen name="btn_image_picker_action_margin_bottom">8dp</dimen>
+    <dimen name="btn_image_picker_action_margin_top">32dp</dimen>
+    <dimen name="text_image_picker_content_margin">8dp</dimen>
+    <dimen name="card_image_picker_corner_radius">8dp</dimen>
+
+    <!-- ================================ -->
+    <!-- FOR THE PROGRESS DIALOG FRAGMENT -->
+    <!-- ================================ -->
+    <dimen name="card_progress_bar_corner_radius">8dp</dimen>
+    <dimen name="card_progress_bar_content_padding">16dp</dimen>
+    <dimen name="text_progress_status_margin_top">4dp</dimen>
+
+    <!-- ============================ -->
+    <!-- FOR THE COMMON TAB FRAGMENTS -->
+    <!-- ============================ -->
+    <dimen name="guideline_content_page_horizontal_keyline">8dp</dimen>
+    <dimen name="text_content_page_empty_list_margin_top">4dp</dimen>
+    <dimen name="text_content_page_empty_list_size">20sp</dimen>
+    <dimen name="image_content_page_step_number_size">96dp</dimen>
+
+    <!-- ============================= -->
+    <!-- FOR THE ANIMAL LIST FRAGMENT -->
+    <!-- ============================= -->
+    <dimen name="animal_list_item_action_buttons_vertical_margin">8dp</dimen>
+    <dimen name="animal_list_item_action_buttons_horizontal_margin">8dp</dimen>
+    <dimen name="divider_animal_list_item_action_buttons_height">1dp</dimen>
+    <dimen name="animal_list_items_spacing">4dp</dimen>
+
+    <!-- ================================== -->
+    <!-- FOR THE COMMON ANIMAL LAYOUT ITEM -->
+    <!-- ================================== -->
+    <dimen name="animal_item_vertical_margin">8dp</dimen>
+    <dimen name="animal_item_horizontal_margin">8dp</dimen>
+    <dimen name="text_animal_item_sku_size">36sp</dimen>
+
+    <!-- ========================================= -->
+    <!-- FOR THE RESCUER CONFIG ACTIVITY/FRAGMENT -->
+    <!-- ========================================= -->
+    <dimen name="guideline_rescuer_config_horizontal_keyline">16dp</dimen>
+    <dimen name="rescuer_config_vertical_margin">16dp</dimen>
+    <dimen name="edittext_rescuer_config_name_margin_left">8dp</dimen>
+    <dimen name="divider_rescuer_config_height">2dp</dimen>
+    <dimen name="divider2_rescuer_config_margin_top">4dp</dimen>
+    <dimen name="rescuer_config_same_section_vertical_margin">8dp</dimen>
+    <!-- For the Rescuer Contact Items -->
+    <dimen name="textinput_rescuer_config_item_contact_margin">4dp</dimen>
+    <dimen name="text_rescuer_config_item_contact_default_label_horizontal_margin">4dp</dimen>
+    <dimen name="edittext_rescuer_config_item_animal_price_margin_top">8dp</dimen>
+    <dimen name="edittext_rescuer_config_item_animal_price_margin_right">8dp</dimen>
+    <dimen name="text_rescuer_config_item_animal_price_label_margin_right">4dp</dimen>
+
+    <!-- ================================================= -->
+    <!-- FOR THE RESCUER ANIMAL PICKER ACTIVITY/FRAGMENT -->
+    <!-- ================================================= -->
+    <dimen name="text_rescuer_animal_picker_empty_list_horizontal_margin">16dp</dimen>
+    <dimen name="recyclerview_rescuer_animal_picker_horizontal_margin">8dp</dimen>
+    <dimen name="rescuer_animal_list_items_spacing">@dimen/animal_list_items_spacing</dimen>
+    <dimen name="frame_rescuer_animal_picker_search_margin_bottom">2dp</dimen>
+
+    <!-- ============================== -->
+    <!-- FOR THE RESCUER LIST FRAGMENT -->
+    <!-- ============================== -->
+    <dimen name="divider_rescuer_list_item_action_buttons_height">1dp</dimen>
+    <dimen name="rescuer_list_item_action_buttons_vertical_margin">8dp</dimen>
+    <dimen name="rescuer_list_item_action_buttons_horizontal_margin">8dp</dimen>
+    <dimen name="rescuer_list_items_spacing">4dp</dimen>
+    <dimen name="btn_rescuer_list_item_contact_drawable_padding">2dp</dimen>
+    <dimen name="rescuer_list_item_vertical_margin">4dp</dimen>
+    <dimen name="rescuer_list_item_horizontal_margin">8dp</dimen>
+
+    <!-- =========================== -->
+    <!-- FOR THE ADOPTIONS LIST FRAGMENT -->
+    <!-- =========================== -->
+    <dimen name="divider_adoptions_list_item_section_height">1dp</dimen>
+    <dimen name="adoptions_list_item_vertical_margin">4dp</dimen>
+    <dimen name="text_adoptions_list_item_total_available_size">18sp</dimen>
+    <dimen name="text_adoptions_list_item_rescuer_name_code_margin">4dp</dimen>
+    <dimen name="text_adoptions_list_item_rescuer_name_code_size">18sp</dimen>
+    <dimen name="text_adoptions_list_item_rescuer_availability_margin">4dp</dimen>
+    <dimen name="adoptions_list_item_action_buttons_vertical_margin">8dp</dimen>
+    <dimen name="adoptions_list_item_action_buttons_horizontal_margin">8dp</dimen>
+    <dimen name="adoptions_list_item_action_buttons_drawable_padding">4dp</dimen>
+    <dimen name="adoptions_list_item_top_rescuer_title_drawable_padding">4dp</dimen>
+    <dimen name="adoptions_list_items_spacing">4dp</dimen>
+
+    <!-- ====================================== -->
+    <!-- FOR THE ADOPTIONS CONFIG ACTIVITY/FRAGMENT -->
+    <!-- ====================================== -->
+    <dimen name="image_adoptions_config_item_photo_height">200dp</dimen>
+    <dimen name="guideline_adoptions_config_horizontal_keyline">16dp</dimen>
+    <dimen name="divider_adoptions_config_height">2dp</dimen>
+    <dimen name="divider2_adoptions_config_margin_top">4dp</dimen>
+    <dimen name="adoptions_config_vertical_margin">16dp</dimen>
+    <dimen name="adoptions_config_vertical_padding">16dp</dimen>
+    <dimen name="adoptions_config_same_section_vertical_margin">8dp</dimen>
+    <dimen name="text_adoptions_config_animal_name_margin_right">8dp</dimen>
+    <dimen name="text_adoptions_config_animal_sku_size">@dimen/text_animal_item_sku_size</dimen>
+    <dimen name="text_adoptions_config_animal_desc_horizontal_margin">12dp</dimen>
+    <dimen name="text_adoptions_config_item_rescuer_name_code_margin_left">8dp</dimen>
+    <dimen name="text_adoptions_config_item_rescuer_rescuing_price_margin_top">4dp</dimen>
+    <dimen name="edittext_adoptions_config_item_rescuer_qty_horizontal_margin">4dp</dimen>
+    <dimen name="adoptions_config_item_rescuer_action_buttons_vertical_margin">8dp</dimen>
+    <dimen name="tablelayout_adoptions_config_animal_attrs_cell_padding">8dp</dimen>
+
+    <!-- =========================================== -->
+    <!-- FOR THE ADOPTIONS PROCUREMENT ACTIVITY/FRAGMENT -->
+    <!-- =========================================== -->
+
+    <!-- ====================== -->
+    <!-- FOR THE ABOUT ACTIVITY -->
+    <!-- ====================== -->
+
+</resources>

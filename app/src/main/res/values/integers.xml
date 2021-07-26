@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- FOR THE ANIMAL CONFIG ACTIVITY/FRAGMENT -->
+    <!-- Input length restriction for the Animal SKU field -->
+    <integer name="animal_config_sku_max_length">10</integer>
+
+    <!-- FOR THE ANIMAL IMAGE ACTIVITY/FRAGMENT -->
+    <!-- Number of Grid columns for the RecyclerView of Images -->
+    <integer name="animal_image_grid_span_count">4</integer>
+
+    <!-- FOR THE RESCUER CONFIG ACTIVITY/FRAGMENT -->
+    <!-- Input length restriction for the Rescuer Code field -->
+    <integer name="rescuer_config_code_max_length">12</integer>
+
+    <!-- FOR THE RESCUER ANIMAL PICKER ACTIVITY/FRAGMENT -->
+    <!-- Minimum number of characters required to trigger the search lookup -->
+    <integer name="rescuer_config_picker_search_start_threshold">3</integer>
+
+</resources>
